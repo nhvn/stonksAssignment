@@ -19,6 +19,10 @@ This project is a simple chat application with a data table. The chat simulates 
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
+## Future Work and Improvements
+1. Commands are currently not supported
+2. Tagging doesn't currently bring up similar usernames
+
 ## License
 
 This project is licensed under the terms of the MIT license.
