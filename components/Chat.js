@@ -1,9 +1,7 @@
-// components/Chat.js
-
 import React, { useState, useEffect } from 'react';
 import UserTagging from './UserTagging';
 
-const users = ['user1', 'user2', 'user3'];
+const users = ['Nathen49', 'Erwin51', 'Fabian_Bins'];
 
 const emojiMap = {
   ':smile:': '😄',
@@ -47,6 +45,7 @@ function Chat() {
   const [cursorPosition, setCursorPosition] = useState(null);
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [emojiFilter, setEmojiFilter] = useState('');
+  const [userFilter, setUserFilter] = useState(''); // Define userFilter state
 
   const sender = 'current user';
 
@@ -163,16 +162,16 @@ function Chat() {
 
       {showEmojiPicker && (
         <div className="emoji-picker absolute bottom-0 mb-16 bg-white p-2 rounded-md shadow-lg">
-            {emojis
+          {emojis
             .filter((emoji) => emoji.startsWith(emojiFilter))
             .map((emoji) => (
-                <button key={emoji} onClick={() => handleEmojiSelect(emoji)} className="m-1">
+              <button key={emoji} onClick={() => handleEmojiSelect(emoji)}>
                 {emojiMap[emoji]}
-                </button>
+              </button>
             ))}
         </div>
-        )}
-        
+      )}
+
       {showUserTagging && (
         <div className="user-picker absolute bottom-0 mb-16 bg-white p-2 rounded-md shadow-lg">
           {users
