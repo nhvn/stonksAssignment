@@ -6,7 +6,7 @@ This project is a simple chat application with a data table. The chat simulates 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/stonks-frontend-assignment.git`
+1. Clone the repository: `git clone https://github.com/alannhvn/stonks-frontend-assignment.git`
 2. Navigate to the project directory: `cd stonks-frontend-assignment`
 3. Install the dependencies: `npm install`
 
